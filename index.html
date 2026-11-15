@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c2539">
+  <meta name="description" content="NEXO-INNOVA: centro gerencial de decisiones con EDT, valor ganado, escenarios, y comparación V0 original, V1 diagnóstico y V2 meta del PI2.">
+  <title>NEXO-INNOVA · Centro de decisiones y evolución | PI2</title>
+  <link rel="stylesheet" href="styles.css?v=20261115-v2">
+  <script defer src="data.js?v=20261115-v2"></script>
+  <script defer src="app.js?v=20261115-v2"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <div class="identity"><div class="mark" aria-hidden="true">N<span>✦</span></div><div><strong>NEXO-INNOVA</strong><small>Proyecto Integrador 2 · Equipo 4</small></div></div>
+      <div class="side-divider"></div>
+      <span class="side-label">RUTA DE EXPLORACIÓN</span>
+      <nav id="nav" class="nav" aria-label="Secciones">
+        <button class="nav-item active" type="button" data-tab="panorama" aria-current="page"><span class="nav-icon">◫</span><span>Panorama ejecutivo</span><span class="nav-no">01</span></button>
+        <button class="nav-item" type="button" data-tab="decisiones"><span class="nav-icon">◇</span><span>Decisiones y escenarios</span><span class="nav-no">02</span></button>
+        <button class="nav-item" type="button" data-tab="edt"><span class="nav-icon">▦</span><span>EDT y cronograma</span><span class="nav-no">03</span></button>
+        <button class="nav-item" type="button" data-tab="riesgos"><span class="nav-icon">◎</span><span>Riesgos y gates</span><span class="nav-no">04</span></button>
+        <button class="nav-item" type="button" data-tab="trazabilidad"><span class="nav-icon">↗</span><span>Evolución y análisis</span><span class="nav-no">05</span></button>
+      </nav>
+      <div class="side-divider"></div>
+      <span class="side-label">CONTROLES DEL MODELO</span>
+      <div class="side-note"><span class="small-dot teal"></span><div><strong>Fuente consolidada S6</strong><span>8 cuentas · 26 paquetes · 3 casos EVM</span></div></div>
+      <div class="side-note"><span class="small-dot amber"></span><div><strong>Modelación académica</strong><span>Sin mediciones de ejecución empresarial</span></div></div>
+      <div class="sidebar-bottom"><span class="eyebrow">VERSIÓN INTEGRADA</span><strong>Semana 6 de 8</strong><small>15 noviembre 2026 · COP nominal</small></div>
+    </aside>
+    <div class="mainwrap">
+      <header class="topbar"><button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button><div class="crumb"><span>PROYECTO INTEGRADOR 2</span><span class="sep">/</span><strong id="crumbCurrent">Panorama ejecutivo</strong></div><div class="top-actions"><span class="status-chip"><span class="small-dot teal"></span> Modelo académico · S6</span><button type="button" class="secondary-btn compact" id="exportSnapshot">↓ Guardar simulación</button></div></header>
+      <main id="main">
+        <section class="view active" id="view-panorama" aria-labelledby="panoramaTitle"><div id="panoramaHost"></div></section>
+        <section class="view" id="view-decisiones" aria-labelledby="decisionesTitle"><div id="decisionesHost"></div></section>
+        <section class="view" id="view-edt" aria-labelledby="edtTitle"><div id="edtHost"></div></section>
+        <section class="view" id="view-riesgos" aria-labelledby="riesgosTitle"><div id="riesgosHost"></div></section>
+        <section class="view" id="view-trazabilidad" aria-labelledby="trazabilidadTitle"><div id="trazabilidadHost"></div></section>
+      </main>
+      <footer class="footer"><span>NEXO-INNOVA · Lintegra Materials S.A.S. · Instrumento académico independiente</span><span>Los datos simulados no son aprobaciones, ejecución real ni pronósticos certificados.</span></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="importSnapshot" type="file" accept=".json,application/json" hidden>
+</body>
+</html>
